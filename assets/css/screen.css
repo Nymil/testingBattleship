@@ -4,10 +4,18 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #03045E;
 }
 
 div {
-    border: 0.1rem solid black;
-    width: 3rem;
-    height: 3rem;
+    border: 0.1rem solid #4EA7D8;
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 4rem;
+    height: 4rem;
+    box-sizing: border-box;
+}
+
+div:hover {
+    border-width: 0.2rem;
+    background-color: rgba(0, 0, 0, 0.2);
 }
