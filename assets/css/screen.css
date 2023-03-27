@@ -7,9 +7,12 @@ body {
     background-color: #03045E;
 }
 
+.board-container {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
 div {
     border: 0.1rem solid #4EA7D8;
-    background-color: rgba(0, 0, 0, 0.1);
     width: 4rem;
     height: 4rem;
     box-sizing: border-box;

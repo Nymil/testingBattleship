@@ -17,3 +17,12 @@ function generateBoard($container, cols, rows) {
         $container.insertAdjacentHTML('beforeend', rowInsertion);
     }
 }
+
+// rotation is a string "North", "East", "South", "West"
+function markDivAsFront($container, rotation, col, row) {}
+
+function markDivAsBody($container, rotation, col, row) {}
+
+function markDivAsBack($container, rotation, col, row) {}
+
+function removeDivMark($container, col, row) {}
