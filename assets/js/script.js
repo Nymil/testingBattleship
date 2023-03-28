@@ -8,13 +8,14 @@ function init() {
 }
 
 function generateBoard($container, cols, rows) {
+    $container.insertAdjacentHTML('beforeend', '<tbody></tbody>')
     for (let row = 0; row < rows; row++) {
         let rowInsertion = "<tr>";
         for (let col = 0; col < cols; col++) {
             rowInsertion += `<td><div class="cell" data-col="${col}" data-row="${row}"></div></td>`;
         }
         rowInsertion += "</tr>";
-        $container.insertAdjacentHTML('beforeend', rowInsertion);
+        $container.querySelector('tbody').insertAdjacentHTML('beforeend', rowInsertion);
     }
 }
 
